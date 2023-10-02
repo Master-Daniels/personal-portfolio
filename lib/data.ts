@@ -39,6 +39,7 @@ export const experiencesData = [
         location: "Miami, FL",
         description: "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
         icon: React.createElement(LuGraduationCap),
+        // icon: <LuGraduationCap />,
         date: "2019",
     },
     {

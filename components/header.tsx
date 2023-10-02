@@ -1,6 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import { links } from "@/lib/data";
-import { HeaderList, HeaderBackground } from "./header-client";
-import Link from "next/link";
+
+import { HeaderList, HeaderBackground } from "./header-components";
 
 const Header = () => {
     return (
