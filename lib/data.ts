@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import bitpowr from "@/public/static/images/bitpowrsite.png";
 import spotifyNext from "@/public/static/images/spotifynext.png";
-import discordClone from "@/public/static/images/discordclone.png";
+import discordclone from "@/public/static/images/discordclone.png";
 
 export const links = [
     {

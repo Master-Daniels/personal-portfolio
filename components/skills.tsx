@@ -32,7 +32,7 @@ export default function Skills() {
     }, [inView, setActiveSection]);
 
     return (
-        <section ref={ref} className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40" id="skills">
+        <section ref={ref} className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-[5rem]" id="skills">
             <SectionHeader>My Skills</SectionHeader>
             <ul className="flex flex-wrap justify-center gap-3 text-base sm:text-lg text-gray-800 mt-10">
                 {skillsData.map((skill, index) => {
