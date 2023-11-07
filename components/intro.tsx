@@ -40,7 +40,7 @@ export default function Intro() {
                             alt="Master Daniels Portrait"
                             quality="95"
                             priority
-                            className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-xl"
+                            className="h-24 w-24 md:h-[18rem] md:w-[18rem] rounded-full border-[0.35rem] border-white shadow-xl"
                         />
                     </motion.div>
                     <motion.span
@@ -58,7 +58,7 @@ export default function Intro() {
                             delay: 0.1,
                             duration: 0.7,
                         }}
-                        className="absolute text-4xl bottom-0 right-0 select-none inline-block"
+                        className="absolute text-4xl bottom-0 right-0 select-none inline-block hover:animate-pulse"
                     >
                         👋
                     </motion.span>
@@ -75,8 +75,8 @@ export default function Intro() {
                 Hi, my name is
                 <span className="font-semibold text-rose-500 dark:text-black/80"> Master Daniels.</span> I am a
                 <span className="font-semibold text-rose-500 dark:text-black/80"> Frontend Developer </span>
-                who specialises in building and designing web applications using modern technologies such as{" "}
-                <Link
+                who specialises in building and designing web applications using modern technologies.
+                {/* <Link
                     href="https://react.dev/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -94,7 +94,7 @@ export default function Intro() {
                 >
                     Nextjs
                     <FaExternalLinkAlt className="w-4 h-4 mt-1" />
-                </Link>
+                </Link> */}
             </motion.h1>
             <motion.div
                 className="flex flex-col sm:flex-row items-center gap-5 justify-center text-sm sm:text-base"
@@ -120,13 +120,17 @@ export default function Intro() {
                 </a>
                 <div className="flex items-center gap-5 justify-center">
                     <a
-                        href="/"
+                        href="https://www.linkedin.com/in/master-daniels-5b0984210/"
+                        target="_blank"
+                        rel="noreferrer noopener"
                         className="bg-white dark:bg-white/20 p-[.9rem] text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-1000 dark:text-white/90"
                     >
                         <BsLinkedin className="w-5 h-5" />
                     </a>
                     <a
-                        href="/"
+                        href="https://github.com/Master-Daniels"
+                        target="_blank"
+                        rel="noreferrer noopener"
                         className="bg-white dark:bg-white/20 p-3 text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-1000 dark:text-white/90"
                     >
                         <FaGithubSquare className="text-base h-6 w-6" />

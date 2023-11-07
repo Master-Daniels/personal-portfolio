@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/static/images/corpcomment.png";
-import rmtdevImg from "@/public/static/images/rmtdev.png";
-import wordanalyticsImg from "@/public/static/images/wordanalytics.png";
+import bitpowr from "@/public/static/images/bitpowrsite.png";
+import spotifyNext from "@/public/static/images/spotifynext.png";
+import discordClone from "@/public/static/images/discordclone.png";
 
 export const links = [
     {
@@ -62,25 +62,26 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Bitpowr",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+            "I worked as a full-stack developer on this website. A fintech company that provides digital assets custody and blockchain infrastructure at scale.",
         tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
+        imageUrl: bitpowr,
+        link: "https://bitpowr.com/",
     },
     {
-        title: "rmtDev",
-        description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+        title: "spotifyNext",
+        description: "A spotify clone I built using modern technologies like Nextjs(react), supabase, etc.",
+        tags: ["React", "TypeScript", "Next.js", "Tailwind", "supabase"],
+        imageUrl: spotifyNext,
+        link: "https://spotify-next-peach.vercel.app/",
     },
     {
-        title: "Word Analytics",
-        description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
+        title: "discordClone",
+        description: "A discord clone with basic messaging functionalities",
+        tags: ["React", "Next.js", "SQL", "Tailwind", "Prisma", "liveKit"],
+        imageUrl: discordclone,
+        link: "https://discord-clone-production-ebe0.up.railway.app/",
     },
 ] as const;
 
