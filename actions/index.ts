@@ -35,7 +35,7 @@ export const sendEmail = async (formData: FormData) => {
             data,
         };
     } catch (error) {
-        console.log(error);
+        // console.error(error);
         return {
             error: getErrorMessage(error),
         };

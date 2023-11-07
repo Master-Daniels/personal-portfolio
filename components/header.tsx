@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { links } from "@/lib/data";
 
 import { HeaderList, HeaderBackground } from "./header-components";

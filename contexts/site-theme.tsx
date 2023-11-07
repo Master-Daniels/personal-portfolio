@@ -25,10 +25,8 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
         }
     };
 
-    
-
     React.useEffect(() => {
-        const localTheme: string | null = window?.localStorage.getItem("theme") || null;
+        const localTheme: string | null = window?.localStorage.getItem("theme") ?? null;
         if (localTheme) {
             if (localTheme === "dark") {
                 setTheme(localTheme);

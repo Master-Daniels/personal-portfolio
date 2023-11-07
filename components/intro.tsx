@@ -80,20 +80,20 @@ export default function Intro() {
                     href="https://react.dev/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-500 underline inline-flex items-center gap-x-2"
+                    className="text-blue-500 underline inline-flex items-center gap-x-1"
                 >
                     Reactjs
-                    <FaExternalLinkAlt className="w-4 h-4" />
+                    <FaExternalLinkAlt className="w-4 h-4 mt-1" />
                 </Link>{" "}
                 and{" "}
                 <Link
                     href="https://nextjs.org/docs/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#888888] underline inline-flex items-center gap-x-2 dark:text-[inherit]"
+                    className="text-[#888888] underline inline-flex items-center dark:text-[inherit] gap-x-1"
                 >
                     Nextjs
-                    <FaExternalLinkAlt className="w-4 h-4" />
+                    <FaExternalLinkAlt className="w-4 h-4 mt-1" />
                 </Link>
             </motion.h1>
             <motion.div
@@ -121,15 +121,15 @@ export default function Intro() {
                 <div className="flex items-center gap-5 justify-center">
                     <a
                         href="/"
-                        className="bg-white dark:bg-white/20 p-4 text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-1000 dark:text-white/60"
+                        className="bg-white dark:bg-white/20 p-[.9rem] text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-1000 dark:text-white/90"
                     >
-                        <BsLinkedin />
+                        <BsLinkedin className="w-5 h-5" />
                     </a>
                     <a
                         href="/"
-                        className="bg-white dark:bg-white/20 p-4 text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-1000 dark:text-white/60"
+                        className="bg-white dark:bg-white/20 p-3 text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-1000 dark:text-white/90"
                     >
-                        <FaGithubSquare className="text-base" />
+                        <FaGithubSquare className="text-base h-6 w-6" />
                     </a>
                 </div>
             </motion.div>

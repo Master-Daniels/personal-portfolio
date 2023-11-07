@@ -4,12 +4,6 @@ export const validateFormField = (field: unknown, maxLength: number) => {
 };
 
 export const getErrorMessage = (error: unknown) => {
-    //  {
-    //   name: 'validation_error',
-    //   message:
-    //     'The resend.com domain is not verified. Please, add and verify your domain on https://resend.com/domains',
-    //   statusCode: 403
-    // }
     let message: string = "";
     if (error) {
         if (error instanceof Error) {

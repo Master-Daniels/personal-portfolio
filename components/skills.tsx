@@ -45,7 +45,7 @@ export default function Skills() {
                                 once: true,
                             }}
                             custom={index}
-                            className="bg-white dark:bg-white/10 dark:text-white/80 border border-black/10 py-2 px-5 rounded-xl"
+                            className="bg-white dark:bg-white/10 dark:text-white/80 border border-black/10 py-2 px-5 rounded-xl duration-1000 hover:animate-pulse"
                             key={index}
                         >
                             {skill}

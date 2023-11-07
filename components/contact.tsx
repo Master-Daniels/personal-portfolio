@@ -19,6 +19,15 @@ export default function Contact() {
         }
     }, [inView, setActiveSection]);
 
+    const formSubmitServer = async (formData: FormData) => {
+        const { data, error } = await sendEmail(formData);
+        if (error) {
+            toast.error(error);
+            return;
+        }
+        console.log(data);
+    };
+
     return (
         <motion.section
             ref={ref}
@@ -44,16 +53,7 @@ export default function Contact() {
                 </a>{" "}
                 or through this form.
             </p>
-            <form
-                action={async (formData) => {
-                    const { data, error } = await sendEmail(formData);
-                    if (error) {
-                        toast.error(error);
-                        return;
-                    }
-                }}
-                className="mt-10 gap-y-3 flex flex-col"
-            >
+            <form action={formSubmitServer} className="mt-10 gap-y-3 flex flex-col">
                 <input
                     type="email"
                     name="email"

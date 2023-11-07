@@ -53,7 +53,8 @@ export default function Experience() {
                             date={item.date}
                             icon={item.icon}
                             iconStyle={{
-                                background: theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                                outline: theme === "light" ? "none" : "none",
+                                background: theme === "light" ? "white" : "rgba(0,0,0, 0.15)",
                                 fontSize: theme === "light" ? "1.5rem" : "1.8rem",
                             }}
                         >
