@@ -112,7 +112,8 @@ export default function Intro() {
                     <BsArrowRight className="text-xl mt-1 group-hover:translate-x-2 transition-[transform] duration-1000" />
                 </Link>
                 <a
-                    href="#contact"
+                    href="/static/documents/Resume New.pdf"
+                    download="Master Daniels Resume"
                     className="bg-white dark:bg-white/20 py-3 px-7 flex items-center gap-x-2 rounded-full group outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-[transform] duration-1000 drop-shadow-md"
                 >
                     <span> Download CV</span>
