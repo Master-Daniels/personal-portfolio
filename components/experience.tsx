@@ -23,7 +23,7 @@ export default function Experience() {
 
     useEffect(() => {
         if (inView) {
-            setActiveSection("Experience");
+            // setActiveSection("Experience");
         }
     }, [inView, setActiveSection]);
 
