@@ -4,7 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import bitpowr from "@/public/static/images/bitpowrsite.png";
 import spotifyNext from "@/public/static/images/spotifynext.png";
-import discordclone from "@/public/static/images/discordclone.png";
+import trelloClone from "@/public/static/images/trelloClone.png";
+import zinewallet from "@/public/static/images/zinewallet.png";
 
 export const links = [
     {
@@ -70,18 +71,26 @@ export const projectsData = [
         link: "https://bitpowr.com/",
     },
     {
+        title: "Zine Wallet",
+        description:
+            "I worked as a frontend developer. It is a start-up fintech company that provides aims to simplify digital payments and bring crypto currency to the less knowledgeable users.",
+        tags: ["React", "Vite", "Tailwind", "ReactQuery", "React-router"],
+        imageUrl: zinewallet,
+        link: "https://admin.zinewallet.com/",
+    },
+    {
+        title: "trelloClone",
+        description: "A trello clone some functionalities",
+        tags: ["React", "Next.js(SSR)", "Tailwind", "Prisma", "Supabase"],
+        imageUrl: trelloClone,
+        link: "https://trello-clone-master-daniels.vercel.app/",
+    },
+    {
         title: "spotifyNext",
         description: "A spotify clone I built using modern technologies like Nextjs(react), supabase, etc.",
         tags: ["React", "TypeScript", "Next.js", "Tailwind", "supabase"],
         imageUrl: spotifyNext,
         link: "https://spotify-next-peach.vercel.app/",
-    },
-    {
-        title: "discordClone",
-        description: "A discord clone with basic messaging functionalities",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Prisma", "liveKit"],
-        imageUrl: discordclone,
-        link: "https://discord-clone-production-ebe0.up.railway.app/",
     },
 ] as const;
 
