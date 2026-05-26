@@ -9,7 +9,7 @@ export default function SubmitButton() {
 		<button
 			disabled={pending}
 			type="submit"
-			className="h-12 w-[8rem] bg-gradient-to-r from-rose-500 to-purple-500 dark:bg-opacity-10 dark:hover:bg-opacity-30 dark:focus:bg-opacity-30 transition-all text-white rounded-full outline-none flex items-center justify-center gap-2 group hover:scale-110 duration-700 ease-in-out focus:scale-105 active:scale-105 disabled:scale-100 disabled:bg-opacity-60 dark:disabled:bg-opacity-60"
+			className="w-fit px-4 py-1.5 bg-gradient-to-r from-rose-500 to-purple-500 dark:bg-opacity-10 dark:hover:bg-opacity-30 dark:focus:bg-opacity-30 transition-all text-white rounded-full outline-none flex items-center justify-center gap-2 group hover:scale-110 duration-700 ease-in-out focus:scale-105 active:scale-105 disabled:scale-100 disabled:bg-opacity-60 dark:disabled:bg-opacity-60"
 		>
 			{pending ? (
 				<ImSpinner11 className="h-6 w-6 animate-spin" />

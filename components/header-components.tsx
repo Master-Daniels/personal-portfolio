@@ -1,12 +1,12 @@
 "use client";
+import { useActiveSection, type SectionName } from "@/contexts/active-section";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { type SectionName, useActiveSection } from "@/contexts/active-section";
 export function HeaderBackground() {
 	return (
 		<motion.div
-			className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-70 shadow-lg shadow-slate-900/[0.3] filter backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[38rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+			className="fixed top-0 left-1/2 h-[4rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-70 shadow-lg shadow-slate-900/[0.3] filter backdrop-blur-[0.5rem] sm:top-6 sm:h-[3rem] sm:w-[38rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
 			initial={{ y: -100, x: "-50%", opacity: 0 }}
 			animate={{ y: 1, x: "-50%", opacity: 1 }}
 		/>

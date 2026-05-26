@@ -33,13 +33,13 @@ export default function ProjectCard({ title, description, tags, imageUrl, link }
 						<h3 className="text-2xl font-semibold dark:text-white/70 group-hover:dark:text-white/90">
 							{title}
 						</h3>
-						<p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 group-hover:dark:text-white/90 ">
+						<p className="mt-2 text-sm sm:text-base leading-relaxed text-gray-700 dark:text-white/70 group-hover:dark:text-white/90 ">
 							{description}
 						</p>
 						<ul className="flex flex-wrap mt-8 gap-1">
 							{tags.map((tag, index) => (
 								<li
-									className="bg-black/[0.7] px-4 py-2 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70 group-hover:dark:text-white/90"
+									className="bg-black/[0.7] px-4 py-2 uppercase tracking-wider text-white rounded-full dark:text-white/70 group-hover:dark:text-white/90 text-xs"
 									key={index}
 								>
 									{tag}

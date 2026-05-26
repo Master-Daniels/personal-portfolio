@@ -68,7 +68,7 @@ export default function About() {
 
 			<div className="space-y-6">
 				<motion.p
-					className="mb-3"
+					className="mb-3 text-sm sm:text-base"
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.9 }}
@@ -80,7 +80,7 @@ export default function About() {
 				</motion.p>
 
 				<motion.p
-					className="mb-3"
+					className="mb-3 text-sm sm:text-base"
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 1.0 }}
@@ -114,7 +114,7 @@ export default function About() {
 				</motion.div>
 
 				<motion.p
-					className="mb-3"
+					className="mb-3 text-sm sm:text-base"
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 1.3 }}
@@ -147,7 +147,7 @@ export default function About() {
 				</motion.div>
 
 				<motion.p
-					className="mb-3"
+					className="mb-3 text-sm sm:text-base"
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 1.6 }}

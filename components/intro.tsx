@@ -42,7 +42,7 @@ export default function Intro() {
 							alt="Adebayo Daniel O. Portrait"
 							quality="95"
 							priority
-							className="h-[14rem] w-[14rem] rounded-full border-[0.35rem] border-white shadow-xl"
+							className="h-[10rem] sm:h-[14rem] w-[10rem] sm:w-[14rem] rounded-full border-[0.35rem] border-white shadow-xl"
 						/>
 					</motion.div>
 					<motion.span
