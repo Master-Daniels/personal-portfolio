@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Adebayo Daniel O.
 
-## Getting Started
+## 👨‍💻 About Me
 
-First, run the development server:
+I am a dedicated Full Stack Developer with a strong passion for building efficient, scalable, and user-friendly web applications. With a robust background in both front-end and back-end technologies, I strive to create seamless digital experiences.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend
+- **Languages:** HTML, CSS, JavaScript (ES6+)
+- **Frameworks:** React.js, Vue.js, Tailwind CSS
+- **Tools:** Webpack, Git, Figma
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Backend
+- **Languages:** Node.js, Python
+- **Frameworks:** Express.js, Django, Flask
+- **Databases:** MongoDB, PostgreSQL, MySQL
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### DevOps & Tools
+- **Version Control:** Git/GitHub
+- **Containerization:** Docker
+- **Cloud Services:** AWS (EC2, S3)
 
-## Learn More
+## 💼 Professional Experience
 
-To learn more about Next.js, take a look at the following resources:
+### Senior Full Stack Developer
+*Tech Innovators Inc. | Jan 2021 - Present*
+- Led a team of 5 developers in redesigning the company's core product, resulting in a 40% increase in user engagement.
+- Architected and implemented RESTful APIs using Node.js and Express, handling over 1M requests daily.
+- Optimized database queries in PostgreSQL, reducing average response time by 30%.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Full Stack Developer
+*Creative Solutions Ltd. | Jun 2018 - Dec 2020*
+- Developed and maintained client-facing websites using React and Node.js.
+- Collaborated with UI/UX designers to implement responsive web designs.
+- Integrated third-party APIs (Stripe, Twilio) to enhance application functionality.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🎓 Education
 
-## Deploy on Vercel
+**Bachelor of Science in Computer Science**
+*University of Technology | 2014 - 2018*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📫 Contact Me
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Email:** adebayo.daniel@example.com
+- **LinkedIn:** [linkedin.com/in/adebayodaniel](https://linkedin.com/in/adebayodaniel)
+- **GitHub:** [github.com/adebayodaniel](https://github.com/adebayodaniel)
+- **Portfolio:** [adebayodaniel.dev](https://adebayodaniel.dev)
+
+---
+
+⭐ **Note:** This repository serves as a digital copy of my resume. Feel free to reach out if you have any opportunities or questions!
