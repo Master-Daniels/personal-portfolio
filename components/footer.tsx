@@ -68,7 +68,7 @@ export default function Footer() {
 					className="text-center"
 				>
 					<h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-						Let's Connect
+						Lets Connect
 					</h3>
 
 					<div className="flex justify-center gap-6 mb-8">

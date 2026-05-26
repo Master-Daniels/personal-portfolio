@@ -1,5 +1,7 @@
 "use client";
 
+import { useActiveSection } from "@/contexts/active-section";
+import Me from "@/public/static/images/me.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +10,6 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaAward, FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { useInView } from "react-intersection-observer";
-import { useActiveSection } from "@/contexts/active-section";
-import Me from "@/public/static/images/me.jpg";
 
 export default function Intro() {
 	const [ref, inView] = useInView();
@@ -74,7 +74,7 @@ export default function Intro() {
 					delay: 0.5,
 				}}
 			>
-				Hi, I'm
+				Hi, my name is
 				<span className="font-semibold text-rose-600"> Adebayo Daniel</span>, a{" "}
 				<span className="font-semibold text-rose-600">Software Engineer</span>{" "}
 				with 4+ years of experience building high-performance systems in{" "}

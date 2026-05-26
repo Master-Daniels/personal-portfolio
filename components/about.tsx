@@ -1,5 +1,6 @@
 "use client";
 
+import { useActiveSection } from "@/contexts/active-section";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import {
@@ -15,13 +16,12 @@ import {
 import { FaGolang } from "react-icons/fa6";
 import { SiPython } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
-import { useActiveSection } from "@/contexts/active-section";
 import SectionHeader from "./section-header";
 
 const techStack = [
 	{ icon: FaReact, name: "React/Next.js", color: "text-blue-500" },
 	{ icon: FaNodeJs, name: "Node.js", color: "text-green-500" },
-	{ icon: SiPython, name: "Python", color: 	"text-[#3776AB]"},
+	{ icon: SiPython, name: "Python", color: "text-[#3776AB]" },
 	{ icon: FaDocker, name: "Docker", color: "text-blue-400" },
 	{ icon: FaAws, name: "AWS", color: "text-orange-500" },
 	{ icon: FaDatabase, name: "Databases", color: "text-purple-500" },
@@ -73,7 +73,7 @@ export default function About() {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.9 }}
 				>
-					I'm a results-driven Software Engineer with 5+ years of hands-on
+					Im a results-driven Software Engineer with 5+ years of hands-on
 					experience building high-performance, scalable systems in FinTech,
 					Web3, and EdTech. I hold a B.Sc. in Computer Science from Federal
 					University Lokoja with a Second Class Upper division (CGPA 4.25/5.0).
@@ -152,9 +152,9 @@ export default function About() {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 1.6 }}
 				>
-					Passionate about clean code and algorithmic efficiency, I'm constantly
+					Passionate about clean code and algorithmic efficiency, Im constantly
 					expanding my expertise and currently exploring Rust for systems
-					programming. I'm excited to bring my technical skills and
+					programming. Im excited to bring my technical skills and
 					problem-solving abilities to build innovative solutions.
 				</motion.p>
 			</div>
