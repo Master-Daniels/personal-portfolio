@@ -6,7 +6,7 @@ import Link from "next/link";
 export function HeaderBackground() {
 	return (
 		<motion.div
-			className="fixed top-0 left-1/2 h-[4rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-70 shadow-lg shadow-slate-900/[0.3] filter backdrop-blur-[0.5rem] sm:top-6 sm:h-[3rem] sm:w-[38rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+			className="fixed top-0 left-1/2 w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-70 shadow-lg shadow-slate-900/[0.3] filter backdrop-blur-[0.5rem] sm:top-6 h-[3.2rem] sm:w-[38rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
 			initial={{ y: -100, x: "-50%", opacity: 0 }}
 			animate={{ y: 1, x: "-50%", opacity: 1 }}
 		/>
@@ -23,7 +23,7 @@ export function HeaderList({ link: { name, hash } }: HeaderListProps) {
 	const { activeSection, setActiveSection } = useActiveSection();
 	return (
 		<motion.li
-			className="h-3/4 flex items-center justify-center relative"
+			className="h-[80%] sm:h-3/4 flex items-center justify-center relative"
 			initial={{ y: -100, opacity: 0 }}
 			animate={{ y: 1, opacity: 1 }}
 		>

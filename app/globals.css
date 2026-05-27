@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        --line-color: #aebfd7;
-    }
-    html.dark {
-        --line-color: rgba(255, 255, 255, 0.2);
-    }
-    .border-black-custome {
-        @apply border border-black/10;
-    }
+	html {
+		--line-color: #aebfd7;
+	}
+
+	html.dark {
+		--line-color: rgba(255, 255, 255, 0.2);
+	}
+
+	.border-black-custome {
+		@apply border border-black/10;
+	}
 }

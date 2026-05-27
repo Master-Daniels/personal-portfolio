@@ -75,12 +75,12 @@ export default function Intro() {
 				}}
 			>
 				Hi, my name is
-				<span className="font-semibold text-rose-600"> Adebayo Daniel</span>, a{" "}
-				<span className="font-semibold text-rose-600">Software Engineer</span>{" "}
+				<span className="font-semibold text-rose-600 dark:text-white "> Adebayo Daniel</span>, a{" "}
+				<span className="font-semibold text-rose-600 dark:text-white ">Software Engineer</span>{" "}
 				with 4+ years of experience building high-performance systems in{" "}
-				<span className="font-semibold text-rose-600">FinTech</span>,{" "}
-				<span className="font-semibold text-rose-600">Web3</span>, and{" "}
-				<span className="font-semibold text-rose-600">EdTech</span>.
+				<span className="font-semibold text-rose-600 dark:text-white ">FinTech</span>,{" "}
+				<span className="font-semibold text-rose-600 dark:text-white ">Web3</span>, and{" "}
+				<span className="font-semibold text-rose-600 dark:text-white ">EdTech</span>.
 			</motion.h1>
 
 			<motion.div
@@ -131,7 +131,7 @@ export default function Intro() {
 						href="https://www.linkedin.com/in/master-daniels-5b0984210/"
 						target="_blank"
 						rel="noreferrer noopener"
-						className="bg-white dark:bg-white/20 p-[.9rem] text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-1000 dark:text-white/90"
+						className="bg-white dark:bg-white/20 p-[.9rem] text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-100 dark:text-white/90"
 					>
 						<BsLinkedin className="w-5 h-5" />
 					</a>
@@ -139,7 +139,7 @@ export default function Intro() {
 						href="https://github.com/Master-Daniels"
 						target="_blank"
 						rel="noreferrer noopener"
-						className="bg-white dark:bg-white/20 p-3 text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-1000 dark:text-white/90"
+						className="bg-white dark:bg-white/20 p-3 text-gray-700 flex items-center gap-x-2 rounded-full group outline-none hover:scale-110 focus:scale-110 drop-shadow-md transition duration-100 dark:text-white/90"
 					>
 						<FaGithubSquare className="text-base h-6 w-6" />
 					</a>

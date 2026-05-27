@@ -116,7 +116,7 @@ export default function Footer() {
 						<p className="text-gray-700 dark:text-gray-300">
 							Built with{" "}
 							<FaHeart className="inline text-red-500 animate-pulse" /> by
-							Adebayo Daniel O.
+							Master Daniels
 						</p>
 						<small className="block text-xs text-gray-600 dark:text-gray-400">
 							&copy; {new Date().getFullYear()}. All rights reserved.

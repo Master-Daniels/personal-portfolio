@@ -1,11 +1,11 @@
 "use client";
 
+import { sendEmail } from "@/actions";
+import { useActiveSection } from "@/contexts/active-section";
 import { motion } from "framer-motion";
 import React from "react";
 import toast from "react-hot-toast";
 import { useInView } from "react-intersection-observer";
-import { sendEmail } from "@/actions";
-import { useActiveSection } from "@/contexts/active-section";
 import SectionHeader from "./section-header";
 import SubmitButton from "./submit-button";
 
@@ -20,12 +20,12 @@ export default function Contact() {
 	}, [inView, setActiveSection]);
 
 	const formSubmitServer = async (formData: FormData) => {
-		const { data, error } = await sendEmail(formData);
+		const { error } = await sendEmail(formData);
 		if (error) {
 			toast.error(error);
 			return;
 		}
-		console.log(data);
+		toast.success("Message sent successfully!");
 	};
 
 	return (
@@ -58,12 +58,22 @@ export default function Contact() {
 			</p>
 			<form action={formSubmitServer} className="mt-10 gap-y-3 flex flex-col">
 				<input
+					type="name"
+					name="name"
+					required
+					aria-required={true}
+					maxLength={500}
+					autoComplete="true"
+					className="h-14 rounded-lg border-black-custom px-4 outline-none focus:outline-yellow-600 dark:bg-white dark:bg-opacity-10 dark:focus:bg-opacity-30 transition-all dark:text-white"
+					placeholder="Name"
+				/>
+				<input
 					type="email"
 					name="email"
 					required
 					aria-required={true}
 					maxLength={500}
-					autoComplete="false"
+					autoComplete="true"
 					className="h-14 rounded-lg border-black-custom px-4 outline-none focus:outline-yellow-600 dark:bg-white dark:bg-opacity-10 dark:focus:bg-opacity-30 transition-all dark:text-white"
 					placeholder="Email"
 				/>

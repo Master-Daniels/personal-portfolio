@@ -1,43 +1,35 @@
-"use server";
-
-import React from "react";
-import ContactFormEmail from "@/emails/contact-form-email";
 import { getErrorMessage, validateFormField } from "@/lib/utils";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
-    console.log("Running on the server");
+	const senderEmail = formData.get("email");
+	const message = formData.get("message");
 
-    const senderEmail = formData.get("email");
-    const message = formData.get("message");
+	if (!validateFormField(senderEmail, 500) || !validateFormField(message, 5000)) {
+		return {
+			error: "Invalid Parameters",
+		};
+	}
+	formData.append("access_key", "76074ef9-e9ef-43a4-a03a-817078df256c");
+	try {
+		const response = await fetch("https://api.web3forms.com/submit", {
+			method: "POST",
+			body: formData
+		});
+		if (!response.ok) {
+			const text = await response.text();
 
-    if (!validateFormField(senderEmail, 500) || !validateFormField(message, 5000)) {
-        return {
-            error: "Invalid Parameters",
-        };
-    }
+			return {
+				error: text,
+			};
+		}
+		const result = await response.json();
+		return {
+			data: result,
+		}
 
-    try {
-        const data = await resend.emails.send({
-            from: "Contact Form <onboarding@resend.com>",
-            to: "adebayooluwasegun011@gmail.com",
-            subject: "Message from contact form",
-            reply_to: senderEmail as string,
-            // react: <ContactFormEmail {...{ message, senderEmail }} />,
-            react: React.createElement(ContactFormEmail, {
-                message: message as string,
-                senderEmail: senderEmail as string,
-            }),
-        });
-        return {
-            data,
-        };
-    } catch (error) {
-        // console.error(error);
-        return {
-            error: getErrorMessage(error),
-        };
-    }
+	} catch (error) {
+		return {
+			error: getErrorMessage(error),
+		};
+	}
 };
