@@ -1,6 +1,5 @@
 "use client";
 
-import { useActiveSection } from "@/contexts/active-section";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import {
@@ -14,12 +13,16 @@ import {
 	FaRocket,
 } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
-import { SiPython } from "react-icons/si";
+import { SiFlutter, SiPython } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
+import { useActiveSection } from "@/contexts/active-section";
 import SectionHeader from "./section-header";
 
 const techStack = [
 	{ icon: FaReact, name: "React/Next.js", color: "text-blue-500" },
+	{ icon: TbBrandReactNative, name: "React Native", color: "text-blue-500" },
+	{ icon: SiFlutter, name: "Flutter", color: "text-blue-500" },
 	{ icon: FaNodeJs, name: "Node.js", color: "text-green-500" },
 	{ icon: SiPython, name: "Python", color: "text-[#3776AB]" },
 	{ icon: FaDocker, name: "Docker", color: "text-blue-400" },
